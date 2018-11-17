@@ -23,7 +23,8 @@ body{
   .layer-sa{
     background: rgba(37, 63, 80, 0.685);
     padding: 150px 0px;
-
+    overflow: hidden;
+    position: relative;
     .h1 {
       color: #FFFFFF;
       font-weight: 800;
@@ -35,16 +36,17 @@ body{
       font-weight: 800;
       font-size: 33px;
     }
+  }
+  .icon-user {
+    position: absolute;
+    z-index: 10;
+    bottom: -90px;
+    left: calc(50vw - 90px);
 
-    .icon-user{
-      position: absolute;
-      bottom: -90px;
-      left: calc(50vw - 90px);
-      img{
-        border-radius: 50%;
-        width: 180px;
-        height: 180px;
-      }
+    img {
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
     }
   }
 }

@@ -4,6 +4,20 @@
 * @Ubicacion - Peru.Lambayeque
 */
 
+$colorApp : #253f50;
+$colorAppInv : #f7f7f7;
+
+.jc-center{
+  justify-content: center
+}
+.jc-baseline{
+  justify-content: space-between;
+}
+
+li{
+  list-style: none;
+}
+
 body{
   font-family: sans-serif;
   font-size: 16px;
@@ -47,6 +61,81 @@ body{
       border-radius: 50%;
       width: 180px;
       height: 180px;
+    }
+  }
+}
+
+.icon-fonts-sa{
+  .icons{
+    .fab{
+      margin: 0px 10px;
+      color: $colorApp;
+      &::before{
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.about-sa{
+  position: relative;
+  background: #f0f2f7;
+  // &::before{
+  //   content: '';
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   border-bottom: 200px solid transparent;
+  //   border-top: 200px solid #253f50;
+  //   border-left: 50vw solid transparent;
+  //   border-right: 50vw solid #253f50;
+  // }
+  .title{
+    padding: 20px 0px;
+    .h2 {
+      text-align: center;
+      color: $colorApp;
+      font-weight: 800;
+      font-size: 50px;
+    }
+  }
+  .list-info{
+    li{
+      padding: 14px 0 14px 115px;
+      position: relative;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.623);
+      .title{
+        padding: 0 20px 0 0;
+        position: absolute;
+        top: 14px;
+        left: 0;
+        display: block;
+        width: 115px;
+        span {
+          width: 40px;
+          font-size: .9rem;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+
+.skill-sa{
+  background: #486172;
+  padding: 50px 0px;
+  .title{
+    padding: 20px 0px;
+    .h2 {
+      text-align: center;
+      color: $colorAppInv;
+      font-weight: 800;
+      font-size: 50px;
+    }
+  }
+  .d-flex{
+    .target-sa{
+      background: $colorAppInv;
     }
   }
 }

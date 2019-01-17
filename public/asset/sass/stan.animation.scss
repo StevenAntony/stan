@@ -292,3 +292,30 @@
     opacity: 1;
   }
 }
+
+/**
+ => Animaciones para Index
+*/
+
+@keyframes imgbaner-rebote{
+  0%{
+    transform: translate3d(650px, -250px, 250px);
+  }
+  25%{
+    transform: skewX(10deg) translate3d(350px, 0px, 250px);
+  }
+  50%{
+    transform: skewX(5deg) translate3d(250px, -150px, 250px);
+  }
+  100%{
+    transform: skewX(0deg) translate3d(0px, 0px, 250px);
+  }
+}
+
+.baner-area{
+  overflow: hidden;
+  .img-banner-animation{
+    transition-delay: 1s;
+    animation: imgbaner-rebote 1.4s linear;
+  }
+}

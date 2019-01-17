@@ -19,6 +19,19 @@
 
 $(document).ready(function () {
 
+  $('.yo-soy').showStan({
+    'position': 'left',
+    'space': 200,
+    'time': 1000,
+    'effect': 'lineal'
+  });
+
+  $('.nombre-yo').showStan({
+    'position': 'top',
+    'space': 200,
+    'time': 1000,
+    'effect': 'lineal'
+  });
 
   /**
    * Animaciones iniciales
